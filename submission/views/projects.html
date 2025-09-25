@@ -1,0 +1,153 @@
+<!-- 
+GenAI Used: ChatGPT
+Prompt: "Give me a barebones HTML structure for my personal website without adding any additional sections"
+Generated Response: 
+Nice — here's a barebones HTML5 structure for a personal website, with only the essential elements and no extra sections:
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Personal Site</title>
+  Comment: Link to a stylesheet (optional): replace "styles.css" when ready
+  <link rel="stylesheet" href="styles.css" />
+  Comment: Optionally add favicon:
+       <link rel="icon" href="/favicon.ico" /> 
+</head>
+<body>
+  Comment: Your content goes here
+  <script src="main.js" defer></script> Comment: optional JS
+</body>
+</html>
+
+If you want it even emptier, remove the stylesheet and script lines. Tell me if you'd like a version with any tiny extras (meta description, social preview tags, or a minimal CSS reset) — otherwise this is the strict minimal scaffold.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isabella's Projects</title>
+  <link rel="stylesheet" href="../resources/css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="../resources/img/csflower.jpg" alt="Isabella's Logo" width="50" height="50" class="rounded-circle me-2 border border-2 custom-border">
+        <span class="fw-semibold fs-4">Isabella’s Projects</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-medium" aria-current="page" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="hobbies.html">Hobbies</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="resume.html">Resume</a> 
+            </li>
+          </ul>
+        </div>
+        <style>
+          body { background-color: rgb(245, 223, 226); }
+        </style>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <h2 class="mb-4 text-center">Isabella's Projects</h2>
+      <div class="accordion" id="projectsAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Pridelands Project
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <img src="../resources/img/lion1.png" class="img-fluid mb-3" alt="Project 1 Image A">
+                  <img src="../resources/img/lion2.png" class="img-fluid" alt="Project 1 Image B">
+                </div>
+                <div class="col-md-6">
+                  <h5>About This Project</h5>
+                  <p>
+                    This Pridelands Project was based off of the classic Game of Life, with a twist to be Lion King themed. This project was made inside VS Code using C++, and took a couple weeks of on and off work. The game has a 2-player set up and is completely playable. It was definetly a challenge, but was rewarding in the end!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Christmas Pacman
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectsAccordion">
+          <div class="accordion-body">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="../resources/img/sacman.png" class="img-fluid" alt="Project 2">
+              </div>
+              <div class="col-md-6">
+                <h5>About This Project</h5>
+                <p>
+                  Sacman is a Christmas themed spin on the original Pacman game. The game mechanics remained the same, but the characters and map were re-themed to fit the holiday spirit. This was the first game I ever coded, and my favorite part by far was creating the graphics for the game!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            This Website
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectsAccordion">
+          <div class="accordion-body">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="../resources/img/website.png" class="img-fluid" alt="Project 3">
+              </div>
+              <div class="col-md-6">
+                <h5>About This Project</h5>
+                <p>
+                  As this website was my first ever time working with HTML, I thought it would be fitting to include it in my projects. While working with HTML + bootstrap was challengin, as I've done it more it's becoming more and more natural! I'm pretty proud of how this came out and look forward to creating more websites in the future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="text-center py-4 mt-5">
+      <p>Connect with me:</p>
+      <a href="https://github.com/isabellaatx" target="_blank" class="mx-2">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/isabellabanse/" target="_blank" class="mx-2">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+</body>
+</html>

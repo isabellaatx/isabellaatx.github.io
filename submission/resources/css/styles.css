@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.about-text h2 {
+  font-size: 2.5rem; 
+}
+
+.about-text p {
+  font-size: 1.25rem;
+}
+
+.navbar {
+  background-color: rgb(235, 183, 192) !important;
+}
+
+footer {
+  background-color: rgb(235, 183, 192) !important;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+body {
+  font-family: "Lato", sans-serif; 
+}
+
+.custom-border {
+  border-color: rgb(168, 68, 85);
+}
+
+.narrow-text {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.btn-custom {
+  background-color: rgb(233, 155, 168); 
+  color: white;                        
+  border: none;  
+                      
+}
+
+.btn-custom:hover {
+  background-color: rgb(200, 120, 135); 
+  color: white;
+}
